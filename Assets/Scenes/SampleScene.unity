@@ -1341,7 +1341,7 @@ Transform:
   m_GameObject: {fileID: 1179064740}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.39, y: -0.71, z: 0}
+  m_LocalPosition: {x: -0.096, y: -0.183, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1423,6 +1423,7 @@ GameObject:
   - component: {fileID: 1339761625}
   - component: {fileID: 1339761624}
   - component: {fileID: 1339761629}
+  - component: {fileID: 1339761630}
   m_Layer: 0
   m_Name: Personagem
   m_TagString: Player
@@ -1525,13 +1526,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.26, y: 0.38}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.34, y: 0.36}
   m_EdgeRadius: 0
 --- !u!212 &1339761627
 SpriteRenderer:
@@ -1582,8 +1583,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 8c880fbba761c5d408df1b19f3c711f3, type: 3}
-  m_Color: {r: 0.099857494, g: 0.4138136, b: 0.9622642, a: 1}
+  m_Sprite: {fileID: -6771573239978776637, guid: 9e8879a2ff80ef94d8c3e91b63a86248, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1603,8 +1604,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.008540511, y: -1.01, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 7.81, y: 7.81, z: 7.81}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1179064741}
   m_Father: {fileID: 0}
@@ -1632,6 +1633,29 @@ MonoBehaviour:
     m_Bits: 64
   rb: {fileID: 0}
   coinText: {fileID: 809365260}
+  anim: {fileID: 0}
+--- !u!95 &1339761630
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339761623}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ae3374ea648a234d85841a70d5bcc87, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1381178855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2115,6 +2139,7 @@ MonoBehaviour:
   position1: {fileID: 1201016156}
   position2: {fileID: 1197015194}
   velocity: 5
+  minimumDistance: 0
 --- !u!1001 &1889216727
 PrefabInstance:
   m_ObjectHideFlags: 0
